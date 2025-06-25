@@ -36,7 +36,9 @@ if (process.env.NODE_ENV === 'development') {
 app.use(apiLogger);
 
 // Route de base pour le débogage
-
+app.get('/', (req, res) => {
+    res.json({ message: "Bienvenue sur l'API Premunia CRM" });
+});
 
 // Routes API
 app.use('/api', apiRoutes);
