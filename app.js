@@ -56,8 +56,10 @@ app.use((req, res) => {
 
 // Démarrage du serveur
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Serveur démarré sur le port ${PORT} en mode ${process.env.NODE_ENV}`);
-});
+if (!process.env.VERCEL) {
+    app.listen(PORT, () => {
+        console.log(`Serveur démarré sur le port ${PORT} en mode ${process.env.NODE_ENV}`);
+    });
+}
 
 export default app;
