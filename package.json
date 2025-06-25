@@ -1,0 +1,39 @@
+{
+  "name": "premunia-crm-backend",
+  "version": "1.0.0",
+  "description": "Backend CRM Premunia avec intégration Supabase",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js",
+    "test": "jest",
+    "deploy:vercel": "vercel --prod",
+    "deploy:netlify": "netlify deploy --prod"
+  },
+  "dependencies": {
+    "@hubspot/api-client": "^9.1.1",
+    "@netlify/functions": "^2.4.1",
+    "@supabase/supabase-js": "^2.39.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "googleapis": "^129.0.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "serverless-http": "^3.2.0",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "netlify-cli": "^17.10.1",
+    "nodemon": "^3.0.2",
+    "vercel": "^32.6.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

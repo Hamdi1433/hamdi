@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "app.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "app.js"
+    }
+  ],
+  "env": {
+    "SUPABASE_URL": "https://khganobrijvfycpvykyw.supabase.co",
+    "SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtoZ2Fub2JyaWp2ZnljcHZ5a3l3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTA4NTQ4OTIsImV4cCI6MjA2NjQzMDg5Mn0.RoERmLOa_Gls7Dmt88lwS43_R_Yquc9WUGB3CHd0cT8",
+    "SUPABASE_SERVICE_ROLE_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtoZ2Fub2JyaWp2ZnljcHZ5a3l3Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1MDg1NDg5MiwiZXhwIjoyMDY2NDMwODkyfQ.eguoZYy_s7PuEjgSDKPNuZGA62AlmDMvMi2CkmWwGDk",
+    "JWT_SECRET": "dfhx0/dQ12j6IUSrSnSNhNvLbVEGbRyBFGboM2Z4kZpqn42FeXRIRH0+jdbjY2kfExbfokPFZWaB8kUBdo5+ig==",
+       "NODE_ENV": "production"
+  }
+}
